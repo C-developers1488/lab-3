@@ -1,4 +1,4 @@
-// Copyright by C-developers1488
+// Copyright by NIK
 
 #include <gtest/gtest.h>
 #include "ptr.hpp"
@@ -17,7 +17,7 @@ TEST(Test, UseCount) {
   SharedPtr<int> sp3(sp2);
   EXPECT_EQ(sp1.use_count(),3);
 }
-TEST(Test, Clas_Strelka) {
+TEST(Test, Class_Pupa) {
   class Values{
    public:
     int val;
@@ -27,7 +27,7 @@ TEST(Test, Clas_Strelka) {
   SharedPtr<Values> sp5(&val1);
   EXPECT_EQ(sp5->val,20);
 }
-TEST(Test, Zvezda) {
+TEST(Test, Star) {
   int val = 5, val2 = 30;
   SharedPtr<int> sp1 (&val);
   SharedPtr<int> sp2(sp1);
@@ -38,7 +38,7 @@ TEST(Test, Zvezda) {
   std::string stroka = "5 5 5 30";
   EXPECT_EQ(str.str(), stroka);
 }
-TEST(Test, Get) {
+TEST(Test, Getting) {
   int val = 5, val2 = 30;
   SharedPtr<int> sp1 (&val);
   SharedPtr<int> sp2(sp1);
@@ -49,7 +49,7 @@ TEST(Test, Get) {
   std::string stroka = "5 5 5 30";
   EXPECT_EQ(str.str(), stroka);
 }
-TEST(Test, Reset) {
+TEST(Test, Resetting) {
   int val = 5, val2 =30;
   SharedPtr<int> sp1 (&val);
   SharedPtr<int> sp2(sp1);
@@ -61,7 +61,7 @@ TEST(Test, Reset) {
   std::string stroka = "0 30";
   EXPECT_EQ(str.str(), stroka);
 }
-TEST(Test, Swap) {
+TEST(Test, Cheng) {
   int val = 5, val2 = 30;
   SharedPtr<int> sp1 (&val);
   SharedPtr<int> sp2(sp1);
